@@ -1,11 +1,11 @@
 {
-  "name": "eth-lightwallet",
+  "name": "bigmoby-eth-lightwallet",
   "version": "2.2.5",
   "description": "A lightweight ethereum javascript wallet.",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ConsenSys/eth-lightwallet.git"
+    "url": "https://github.com/bigmoby/eth-lightwallet.git"
   },
   "scripts": {
     "build-js": "browserify index.js --s lightwallet | uglifyjs -c > dist/lightwallet.min.js",
@@ -58,7 +58,7 @@
     "rlp": "^2.0.0",
     "scrypt-async": "^1.2.0",
     "tweetnacl": "0.13.2",
-    "web3": "^0.15.3"
+    "bigmoby-web3": "^0.15.3"
   },
   "devDependencies": {
     "async": "^1.4.2",
@@ -68,6 +68,6 @@
     "istanbul": "^0.3.15",
     "mocha": "^2.2.5",
     "uglify-js": "^2.4.23",
-    "hooked-web3-provider": "christianlundkvist/hooked-web3-provider#updates_web3_14"
+    "bigmoby-hooked-web3-provider": "0.0.1"
   }
 }
