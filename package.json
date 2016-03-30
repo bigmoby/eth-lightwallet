@@ -1,6 +1,6 @@
 {
   "name": "bigmoby-eth-lightwallet",
-  "version": "2.2.6",
+  "version": "2.2.7",
   "description": "A lightweight ethereum javascript wallet.",
   "main": "index.js",
   "repository": {
