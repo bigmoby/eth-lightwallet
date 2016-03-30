@@ -1,16 +1,16 @@
 {
   "name": "bigmoby-eth-lightwallet",
-  "version": "2.2.5",
+  "version": "2.2.6",
   "description": "A lightweight ethereum javascript wallet.",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/bigmoby/eth-lightwallet.git"
+    "url": "git+https://github.com/bigmoby/eth-lightwallet.git"
   },
   "scripts": {
     "build-js": "browserify index.js --s lightwallet | uglifyjs -c > dist/lightwallet.min.js",
     "build-dev": "browserify index.js -o dist/lightwallet.js --s lightwallet",
-    "test": "./node_modules/.bin/mocha --reporter spec",
+    "test": "mocha --reporter spec",
     "coverage": "istanbul cover _mocha -- -R spec; open coverage/lcov-report/index.html"
   },
   "keywords": [
@@ -21,34 +21,16 @@
     "wallet"
   ],
   "contributors": [
-    {
-      "name": "Christian Lundkvist",
-      "email": "christian.lundkvist@gmail.com"
-    },
-    {
-      "name": "Tyler Clark",
-      "email": "tysclark@gmail.com"
-    },
-    {
-      "name": "Joel Torstensson",
-      "email": "me@joeltorstensson.se"
-    },
-    {
-      "name": "Zach Ferland",
-      "email": "zachferland@gmail.com"
-    },
-    {
-      "name": "Kevin Jiao",
-      "email": "kevin.jiao@berkeley.edu"
-    },
-    {
-      "name": "Marian Oancea",
-      "email": "marian.oancea@gmail.com"
-    }
+    "Christian Lundkvist <christian.lundkvist@gmail.com>",
+    "Tyler Clark <tysclark@gmail.com>",
+    "Joel Torstensson <me@joeltorstensson.se>",
+    "Zach Ferland <zachferland@gmail.com>",
+    "Kevin Jiao <kevin.jiao@berkeley.edu>",
+    "Marian Oancea <marian.oancea@gmail.com>"
   ],
   "license": "MIT",
   "dependencies": {
-    "bignumber.js": "debris/bignumber.js#94d7146671b9719e00a09c29b01a691bc85048c2",
+    "bignumber.js": "github:debris/bignumber.js#94d7146671b9719e00a09c29b01a691bc85048c2",
     "bitcore-lib": "^0.13.13",
     "bitcore-mnemonic": "^1.0.1",
     "crypto-js": "^3.1.5",
@@ -62,12 +44,21 @@
   },
   "devDependencies": {
     "async": "^1.4.2",
-    "bluebird" : "^3.3.1",
+    "bluebird": "^3.3.1",
     "browserify": "^10.2.4",
     "chai": "^3.0.0",
     "istanbul": "^0.3.15",
     "mocha": "^2.2.5",
     "uglify-js": "^2.4.23",
     "bigmoby-hooked-web3-provider": "0.0.1"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/bigmoby/eth-lightwallet/issues"
+  },
+  "homepage": "https://github.com/bigmoby/eth-lightwallet#readme",
+  "directories": {
+    "example": "example",
+    "test": "test"
+  },
+  "author": "Fabio Mauro"
 }
