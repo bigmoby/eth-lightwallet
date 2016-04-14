@@ -1,6 +1,6 @@
 {
   "name": "bigmoby-eth-lightwallet",
-  "version": "2.2.7",
+  "version": "2.2.8",
   "description": "A lightweight ethereum javascript wallet.",
   "main": "index.js",
   "repository": {
@@ -40,7 +40,8 @@
     "rlp": "^2.0.0",
     "scrypt-async": "^1.2.0",
     "tweetnacl": "0.13.2",
-    "bigmoby-web3": "^0.15.3"
+    "bigmoby-web3": "^0.15.3",
+    "sync-prompt": "0.4.2"
   },
   "devDependencies": {
     "async": "^1.4.2",
